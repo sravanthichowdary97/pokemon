@@ -1,134 +1,398 @@
 .container {
-    margin: 30px 60px;
+  margin: 30px 60px;
 }
 
 .header {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .appName {
-    font-weight: 700;
-    font-size: 30px;
-    letter-spacing: 1px;
-    width: 150px;
-    height: 52px;
-    border-right: 1px solid #2E3156;
-    margin-right: 30px;
-    display: flex;
-    align-items: center;
+  font-weight: 700;
+  font-size: 30px;
+  letter-spacing: 1px;
+  width: 150px;
+  height: 52px;
+  border-right: 1px solid #2E3156;
+  margin-right: 30px;
+  display: flex;
+  align-items: center;
 }
 
 .caption {
-    font-weight: 500;
-    font-size: 20px;
-    color: #6D718C;
+  font-weight: 500;
+  font-size: 20px;
+  color: #6D718C;
 }
 
 .filters {
-    margin-top: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+  margin-top: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.mobilefilters {
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: 85% 15%;
+  justify-content: space-evenly;
+  align-items: start;
+  justify-items: start;
 }
 
 .label {
-    margin-left: 15px;
-    font-size: 16px;
-    margin-bottom: 8px;
+  margin-left: 15px;
+  font-size: 16px;
+  margin-bottom: 8px;
 }
 
 .pokemonList {
-    margin-top: 30px;
+  margin-top: 30px;
 }
 
 .card {
-    height: 280px;
-    border: 1px dashed #2E3156;
-    border-radius: 8px;
-    min-width: 200px;
-    background: linear-gradient(180deg, rgba(193, 212, 201, 1) 0%, rgba(206, 185, 235, 1) 100%);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    cursor: pointer;
-    border-image-source: url("http://i.stack.imgur.com/wLdVc.png");
-    border-image-slice: 2;
-    border-image-repeat: round;  
-    
-    /* or use the shorthand border-image */
-    border-image: url("http://i.stack.imgur.com/wLdVc.png") 1 round;
+  height: 280px;
+  border: 1px dashed #2E3156;
+  border-radius: 8px;
+  min-width: 200px;
+  background: linear-gradient(180deg, rgba(193, 212, 201, 1) 0%, rgba(206, 185, 235, 1) 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  cursor: pointer;
+  border-image-source: url("http://i.stack.imgur.com/wLdVc.png");
+  border-image-slice: 2;
+  border-image-repeat: round;
+
+  /* or use the shorthand border-image */
+  border-image: url("http://i.stack.imgur.com/wLdVc.png") 1 round;
 }
 
 .pokemonImage {
-    height: 60%;
-    width: 100%;
-    background-repeat: no-repeat;
-    background-position: center;
+  height: 60%;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .pokemonName {
-    font-weight: 600;
-    font-size: 20px;
-    letter-spacing: 1px;
-    text-transform: capitalize;
+  font-weight: 600;
+  font-size: 20px;
+  letter-spacing: 1px;
+  text-transform: capitalize;
 }
-.pokemonId{
-    font-weight: 400;
-    font-size: 20px;
-    margin-top: 5px;
+
+.pokemonId {
+  font-weight: 400;
+  font-size: 20px;
+  margin-top: 5px;
 }
-.image{
-    background-repeat: no-repeat;
-    background-position: center;
-    height: 280px;
-    border-radius: 8px;
-    min-width: 200px;
+
+.image {
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 280px;
+  border-radius: 8px;
+  min-width: 200px;
 }
-.detailCard{
-    height: 280px;
-    border: 1px dashed #2E3156;
-    border-radius: 8px;
-   width: 200px;
-    background: linear-gradient(180deg, rgba(193, 212, 201, 1) 0%, rgba(206, 185, 235, 1) 100%);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    border-image: url("http://i.stack.imgur.com/wLdVc.png") 1 round;
+
+.detailCard {
+  height: 280px;
+  border: 1px dashed #2E3156;
+  border-radius: 8px;
+  width: 200px;
+  background: linear-gradient(180deg, rgba(193, 212, 201, 1) 0%, rgba(206, 185, 235, 1) 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-image: url("http://i.stack.imgur.com/wLdVc.png") 1 round;
 }
+
 .pokemonDetailsName {
-    font-weight: 700;
-    font-size: 30px;
-    letter-spacing: 1px;
-    text-transform: uppercase;
+  font-weight: 700;
+  font-size: 20px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
 }
-.pokemonDetailsId{
-        font-weight: 400;
-        font-size: 30px;
-        letter-spacing: 1px;
+
+.pokemonDetailsId {
+  font-weight: 400;
+  font-size: 20px;
+  letter-spacing: 1px;
 }
-.separtor{
-    width: 1px;
-    height: 40px;
-    background-color: #2E3156;
+
+.pokemonDetailsIdButtons {
+  font-weight: 400;
+  font-size: 30px;
+  letter-spacing: 1px;
+  position: absolute;
+  right: 4%;
 }
-.detailDes{
-    margin-top: 20px;
-    line-height: 20px;
-    font-size: 16px;
-    color: #2E3156;
-    font-weight: 450;
-    text-align: justify;
+
+.separtor {
+  width: 1px;
+  height: 40px;
+  background-color: #2E3156;
 }
-.detLabel{
-    font-weight: 700;
-    font-size: 16px;
+
+.detailDes {
+  line-height: 20px;
+  font-size: 16px;
+  color: #2E3156;
+  font-weight: 450;
+  text-align: justify;
 }
-.detVal{
+
+.detLabel {
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.detVal {
+  margin-top: 10px;
+  font-weight: 400;
+  font-size: 16px;
+  text-transform: capitalize;
+}
+
+/* .label {
+    font-size: 20px;
+    color: green;
+  } */
+.gridcontainer {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: repeat(3, 1fr);
+}
+
+.box {
+  background-color: rgb(112, 136, 136);
+  padding: 10px;
+}
+
+.boxcontent {
+  margin-bottom: 5px;
+  padding: 0px 10px;
+}
+
+.stats {
+  padding: 5px 10px 0px 10px;
+  font-weight: 700;
+  font-size: 30px;
+
+}
+
+@media only screen and (max-width: 600px) {
+  .gridcontainer {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(6, 1fr);
+  }
+
+  .hidecontainer {
+    display: none;
+  }
+
+  .pokemonDetailsName {
+    margin-left: 30px;
+  }
+
+  .pokemonDetailsId {
+    margin-left: 30px;
+  }
+
+  .detailCard {
+    width: 150px;
+    height: 150px;
     margin-top: 10px;
-    font-weight: 400;
-    font-size: 16px;
-    text-transform: capitalize;
+  }
+
+  .headercontainer {
+    grid-template-columns: 30% 30%;
+    margin-left: -25%;
+  }
+
+}
+
+@media only screen and (max-width: 400px) {
+  .gridcontainer {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(6, 1fr);
+  }
+
+  .hidecontainer {
+    display: none;
+  }
+
+  .filters {
+    display: none;
+  }
+
+  .pokemonDetailsName {
+    margin-left: 30px;
+  }
+
+  .pokemonDetailsId {
+    margin-left: 30px;
+  }
+
+  .detailCard {
+    width: 100px;
+    height: 150px;
+    margin-top: 10px;
+  }
+
+  .headercontainer {
+    grid-template-columns: 30% 30%;
+    margin-left: -8px;
+  }
+
+  .detLabel {
+    font-weight: 700;
+    font-size: 14px;
+  }
+
+  .detVal {
+    font-size: 14px;
+  }
+
+  .card {
+    margin-left: 0px;
+  }
+
+  .appName {
+    font-weight: 500;
+    font-size: 20px;
+    width: 120px;
+  }
+
+  .caption {
+    font-weight: 500;
+    font-size: 15px;
+    color: #6D718C;
+  }
+}
+
+
+@media only screen and ((max-width: 375px) or (max-width: 414px) or (max-width: 500px) or (max-width: 600px)) {
+
+  .filters {
+    display: none;
+  }
+}
+
+@media only screen and ((min-width: 600px)) {
+
+  .mobilefilters {
+    display: none;
+  }
+}
+
+@media only screen and ((max-width: 767px)) {
+
+  .hidecontainer {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .mobilecontainer {
+    display: none;
+  }
+
+  .footerGridContainer {
+    display: none
+  }
+
+  .mobilefilters {
+    display: none
+  }
+}
+
+.headercontainer {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  align-items: start;
+  align-content: stretch;
+  justify-content: space-between;
+  justify-items: end;
+  margin-bottom: 10px;
+}
+
+.paragraph {
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+
+.paragraphDesktop {
+  margin-top: 30px;
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+
+.readmorebutton {
+  background-color: #DEEDED;
+  border: none;
+  color: black;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.modal {
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+.modalcontent {
+  background-color: #fefefe;
+  border-radius: 10px;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
+  max-height: 80%;
+  max-width: 80%;
+  overflow: auto;
+  position: relative;
+  text-align: left;
+  background-color: #000000;
+  color: white;
+  top: 100px
+}
+
+.close {
+  color: #aaaaaa;
+  cursor: pointer;
+  font-size: 28px;
+  font-weight: bold;
+  position: absolute;
+  right: 10px;
+  top: 0;
+}
+
+.close:hover,
+.close:focus {
+  color: #000000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.hiddenlabel {
+  width: 50px;
+  height: 50px;
+}
+.selectType{
+  width: 100%;
+  height:"10px"
 }

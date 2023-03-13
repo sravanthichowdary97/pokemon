@@ -7,3 +7,9 @@ export const fetchPokemons=()=>{
 export const fetchPokemon=(index)=>{
   return  axios.get(BASE_URL+`pokemon/${index}`)
 }
+export const fetchPokemonDescription = (index) =>{
+  return  axios.get(BASE_URL+`pokemon-species/${index}`)
+}
+export const fetchPokemonStrengths = (index) =>{
+  return  axios.get(BASE_URL+`type/${index}`)
+}
