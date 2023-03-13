@@ -1,0 +1,30 @@
+body{
+  background-color: #DEEDED;
+}
+*{
+  color: #2E3156;
+}
+.MuiInputBase-input{
+  background-color: #C9DDE2!important;
+  padding: 15px!important;
+  border-radius: 8px!important;
+  height: 35px;
+  width: 100%;
+}
+.MuiFilledInput-root::before{
+  border-bottom: none!important;
+ 
+}
+.MuiInputBase-root{
+  border-radius: 8px!important;
+  background-color: #C9DDE2!important;
+}
+.MuiInputAdornment-root svg{
+  fill:#2E3156
+}
+.MuiTextField-root{
+  width: 100%;
+}
+.MuiModal-backdrop{
+  background-color: rgba(64, 68, 101,0.9)!important;
+}
